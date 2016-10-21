@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="styles/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.teal-red.min.css" />
+	<script src="/bower_components/material-design-lite/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<div class="mdl-logo">
+					<span class="mdl-layout-title">Se Agonei</span>
+				</div>
+				<!-- Add spacer, to align navigation to the right -->
+				<div class="mdl-layout-spacer"></div>
+				<!-- Navigation. We hide it in small screens. -->
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
+					<a class="mdl-navigation__link" href="">Link</a>
+					<a class="mdl-navigation__link" href="">Link</a>
+					<a class="mdl-navigation__link" href="">Link</a>
+					<a class="mdl-navigation__link" href="">Link</a>
+				</nav>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Title</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="">LiMnk</a>
+				<a class="mdl-navigation__link" href="">Link</a>
+				<a class="mdl-navigation__link" href="">Link</a>
+				<a class="mdl-navigation__link" href="">Link</a>
+			</nav>
+		</div>
+		<main class="mdl-layout__content">
+			<div class="page-content">
+				<!-- Your content goes here -->
+				<div class="mdl-grid rooms-container">
+					<div class="mdl-cell mdl-cell--3-col">
+						<div class="room-card-wide mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Quarto da Dona Chica</h2>
+							</div>
+							<div class="mdl-card__supporting-text">
+								Centro, Teresina - PI
+							</div>
+							<div class="mdl-card__actions mdl-card--border">
+								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      								Reservar
+    							</a>
+							</div>
+							<div class="mdl-card__menu">
+								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      								<i class="material-icons">share</i>
+    							</button>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+
+			</div>
+		<!--	<footer class="mdl-mini-footer">
+			<div class="mdl-mini-footer__left-section">
+				<div class="mdl-logo">Se Agonei</div>
+				<ul class="mdl-mini-footer__link-list">
+					<li><a href="#">Ajuda</a></li>
+					<li><a href="#">Termos de uso & Privacidade</a></li>
+				</ul>
+			</div>
+		</footer> -->
+		</main>
+		
+	</div>
+
+	<!-- TODO(DEVELOPER): O snippet de inicialização do Firebase é colocado aqui em baixo! -->
+
+	<script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyAlL-MTfU-dZCLZR1uBGE3HUz_cDKzBhCo",
+			authDomain: "seagonei.firebaseapp.com",
+			databaseURL: "https://seagonei.firebaseio.com",
+			storageBucket: "seagonei.appspot.com",
+			messagingSenderId: "1048817123248"
+		};
+		firebase.initializeApp(config);
+	</script>
+</body>
+</html>

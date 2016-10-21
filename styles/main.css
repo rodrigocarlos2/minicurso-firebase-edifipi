@@ -1,0 +1,12 @@
+
+.room-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('../images/room.jpeg') center / cover;
+}
+.room-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+.rooms-container{
+  padding: 20px !important;
+}
