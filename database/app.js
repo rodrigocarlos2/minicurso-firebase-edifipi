@@ -13,7 +13,7 @@ function DatabaseAula(){
 //Passo 1: Inicialiazação do Firebase
 DatabaseAula.prototype.initFirebase = function() {
   //Inicialiazação dos serviços firebase
-  this.database = null; //TODO(DEVELOPER): Inicializar o serviço de database firebase.database()
+  this.database = firebase.database();
 
   //this.loadPosts(); //TODO(DEVELOPER): Descomentar esta linha depois de implementar a função loadPosts
 };
