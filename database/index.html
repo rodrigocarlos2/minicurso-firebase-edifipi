@@ -4,6 +4,7 @@
 <head>
 	<title></title>
 	<meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 		crossorigin="anonymous">
@@ -14,12 +15,44 @@
 	<!-- bootstrap end -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="style.css" rel="stylesheet">
+  <script src="app.js"></script>
 </head>
 
 <body>
+	<div class="row">
+  <div class="col-lg-12">
+    <div class="input-group">
+      <form id="post-form">
+        <input id="entPostar" type="text" class="form-control" placeholder="Digitar alguma coisa">
+      <span class="input-group-btn">
+        <button id="btnPostar" class="btn btn-default" type="submit"> Postar!</button>
+      </span>
+      </form>
+      
+    </div>
+  </div>
+</div>
+
+<div id="posts">
+
+</div>
 
 
 	<!-- TODO(ALUNO) Copie e cole a inicialização do firebase aqui!! -->
+
+	<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+	<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCXmcnBw1fL8L7IOonuMbo8nrvgDC7FRb4",
+    authDomain: "minicurso-edifpi.firebaseapp.com",
+    databaseURL: "https://minicurso-edifpi.firebaseio.com",
+    storageBucket: "minicurso-edifpi.appspot.com",
+    messagingSenderId: "509115724179"
+  };
+  firebase.initializeApp(config);
+</script>
+
 </body>
 
 </html>
