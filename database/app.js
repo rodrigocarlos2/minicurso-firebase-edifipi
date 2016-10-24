@@ -15,7 +15,7 @@ DatabaseAula.prototype.initFirebase = function() {
   //Inicialiazação dos serviços firebase
   this.database = firebase.database();
 
-  //this.loadPosts(); //TODO(DEVELOPER): Descomentar esta linha depois de implementar a função loadPosts
+  this.loadPosts(); 
 };
 
 //Passo 2: Carregar as mensagens do Firebase
