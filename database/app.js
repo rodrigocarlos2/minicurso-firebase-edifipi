@@ -21,7 +21,7 @@ DatabaseAula.prototype.initFirebase = function() {
 //Passo 2: Carregar as mensagens do Firebase
 DatabaseAula.prototype.loadPosts = function() {
   // Referencia aos Posts do Firebase
-  this.postsRef = this.database.ref('posts'); 
+  this.postsRef = null; //TODO(DEVELOPER): Criar uma nova referencia para /posts/
   
   // Só para garantir que não tem nenhum listener anterior
   this.postsRef.off();
