@@ -40,9 +40,12 @@ DatabaseAula.prototype.savePost = function(e) {
   e.preventDefault();
 
   if (this.entradaPostar.value) {
-    //this.postsRef.push
-
-	//TODO(DEVELOPER): implementar o push para enviar o post ao banco e depois apagar o campo de texto
+    this.postsRef.push({
+		text: this.entradaPostar.value
+	}).then(() => {
+		//apagar a entrada de texto
+		this.entradaPostar.value = ''
+	})
   }
 };
 
