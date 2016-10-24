@@ -15,13 +15,13 @@ DatabaseAula.prototype.initFirebase = function() {
   //Inicialiazação dos serviços firebase
   this.database = firebase.database();
 
-  //this.loadPosts(); //TODO(DEVELOPER): Descomentar esta linha depois de implementar a função loadPosts
+  this.loadPosts(); 
 };
 
 //Passo 2: Carregar as mensagens do Firebase
 DatabaseAula.prototype.loadPosts = function() {
   // Referencia aos Posts do Firebase
-  this.postsRef = null; //TODO(DEVELOPER): Criar uma nova referencia para /posts/
+  this.postsRef = this.database.ref('posts');
   
   // Só para garantir que não tem nenhum listener anterior
   this.postsRef.off();
