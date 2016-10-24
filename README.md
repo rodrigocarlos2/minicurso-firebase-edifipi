@@ -1,9 +1,12 @@
 # Minicurso de Firebase EDIFPI 2016
+
 ### Objetivos
+
 Entender e testar o seguintes recursos do firebase
   - Realtime Database (Banco de Dados em Tempo-Real)
-  - Storage (Armaazenamento)
+  - Storage (Armazenamento)
   - Auth (Autenticação)
+
 ### Tecnologias
 
 Tecnologias utilizadas no minicurso
